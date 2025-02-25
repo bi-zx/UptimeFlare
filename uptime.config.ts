@@ -23,7 +23,7 @@ const workerConfig = {
       // `name` is used at status page and callback message
       name: 'Feiyu Blog',
       // `method` should be a valid HTTP Method
-      method: 'POST',
+      method: 'GET',
       // `target` is a valid URL
       target: 'https://feiyu05.top',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
@@ -31,9 +31,9 @@ const workerConfig = {
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
       statusPageLink: 'https://status.feiyu05.top',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
-      expectedCodes: [200],
+      // expectedCodes: [200],
       // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-      timeout: 10000,
+      // timeout: 10000,
       // [OPTIONAL] headers to be sent
       // headers: {
       //   'User-Agent': 'Uptimeflare',
@@ -58,11 +58,7 @@ const workerConfig = {
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'waline.feiyu05.top',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://status.feiyu05.top',
-      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
-      expectedCodes: [200],
-      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
-      timeout: 10000
+      statusPageLink: 'https://waline.feiyu05.top',
     },
     // Example TCP Monitor
     // {
