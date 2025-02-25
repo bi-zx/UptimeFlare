@@ -19,13 +19,13 @@ const workerConfig = {
     // Example HTTP Monitor
     {
       // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'foo_monitor',
+      id: 'blog_monitor',
       // `name` is used at status page and callback message
-      name: 'My API Monitor',
+      name: 'Feiyu Blog',
       // `method` should be a valid HTTP Method
       method: 'POST',
       // `target` is a valid URL
-      target: 'https://status.feiyu05.top',
+      target: 'https://feiyu05.top',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
       tooltip: 'This is a tooltip for this monitor',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
@@ -47,6 +47,23 @@ const workerConfig = {
       // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
       // checkLocationWorkerRoute: 'https://xxx.example.com',
     },
+    {
+      id: 'waline_monitor',
+      // `name` is used at status page and callback message
+      name: 'Waline Comment System',
+      // `method` should be a valid HTTP Method
+      method: 'POST',
+      // `target` is a valid URL
+      target: 'https://waline.feiyu05.top',
+      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
+      tooltip: 'This is a tooltip for this monitor',
+      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
+      statusPageLink: 'https://status.feiyu05.top',
+      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      expectedCodes: [200],
+      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      timeout: 10000
+    },
     // Example TCP Monitor
     {
       id: 'test_tcp_monitor',
@@ -56,7 +73,7 @@ const workerConfig = {
       // `target` should be `host:port` for tcp monitors
       target: '1.2.3.4:22',
       tooltip: 'My production server SSH',
-      statusPageLink: 'https://example.com',
+      statusPageLink: 'https://status.feiyu05.top',
       timeout: 5000,
     },
   ],
