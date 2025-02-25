@@ -27,7 +27,7 @@ const workerConfig = {
       // `target` is a valid URL
       target: 'https://feiyu05.top',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'This is a tooltip for this monitor',
+      tooltip: 'feiyu05.top',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
       statusPageLink: 'https://status.feiyu05.top',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
@@ -56,7 +56,7 @@ const workerConfig = {
       // `target` is a valid URL
       target: 'https://waline.feiyu05.top',
       // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'This is a tooltip for this monitor',
+      tooltip: 'waline.feiyu05.top',
       // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
       statusPageLink: 'https://status.feiyu05.top',
       // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
@@ -65,17 +65,17 @@ const workerConfig = {
       timeout: 10000
     },
     // Example TCP Monitor
-    {
-      id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
-      // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
-      tooltip: 'My production server SSH',
-      statusPageLink: 'https://status.feiyu05.top',
-      timeout: 5000,
-    },
+    // {
+    //   id: 'test_tcp_monitor',
+    //   name: 'Example TCP Monitor',
+    //   // `method` should be `TCP_PING` for tcp monitors
+    //   method: 'TCP_PING',
+    //   // `target` should be `host:port` for tcp monitors
+    //   target: '1.2.3.4:22',
+    //   tooltip: 'My production server SSH',
+    //   statusPageLink: 'https://status.feiyu05.top',
+    //   timeout: 5000,
+    // },
   ],
   notification: {
     // [Optional] apprise API server URL
